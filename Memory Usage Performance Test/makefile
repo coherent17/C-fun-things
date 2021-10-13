@@ -14,3 +14,4 @@ time: $(OBJ)
 
 clean:
 	rm $(OBJ)
+	

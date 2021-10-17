@@ -90,10 +90,10 @@ int main(int argc, char **argv){
 
         char celebration_string[MAXX];
     if(yourname){
-        snprintf(celebration_string, MAXX, "  %s -- 25000 subscibers!  ", yourname);
+        snprintf(celebration_string, MAXX, "  %s -- 1000000 subscibers!  ", yourname);
     }
     else{
-        snprintf(celebration_string, MAXX, "  25000 subsctibers!  ");
+        snprintf(celebration_string, MAXX, "  1000000 subsctibers!  ");
     }
     mvaddstr(MAXY, midx - (strlen(celebration_string) / 2), celebration_string);
 

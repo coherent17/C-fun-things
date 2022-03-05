@@ -27,14 +27,6 @@ node *createNode(void *data){
 	return newnode;
 }
 
-//allocate the memory for the testing self define data
-test *testnode(int a, char b){
-	test *testnode = malloc(sizeof(test));
-	testnode->a = a;
-	testnode->b = b;
-	return testnode;
-}
-
 //push the node in the head of the linkedlist
 void push(node **head, void *data){
 	node *newnode = createNode(data);
@@ -65,10 +57,16 @@ void freeLinkedlist(node *head){
 
 int main(){
 	node *head = NULL;
-	push(&head, testnode(1,'a'));
-	push(&head, testnode(2,'b'));
-	push(&head, testnode(3,'c'));
-	push(&head, testnode(4,'d'));
+
+	test data1 = {.a = 1, .b = 'a'};
+	test data2 = {.a = 2, .b = 'b'};
+	test data3 = {.a = 3, .b = 'c'};
+	test data4 = {.a = 4, .b = 'd'};
+
+	push(&head, &data1);
+	push(&head, &data2);
+	push(&head, &data3);
+	push(&head, &data4);
 	printLinkedlist(head);
 	freeLinkedlist(head);
 	return 0;

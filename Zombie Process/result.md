@@ -2,6 +2,7 @@
 ```
 $ ps -aux | grep zombie
 ```
+
 coheren+ 25534  0.0  0.0   4076   440 pts/90   S+   02:41   0:00 ./zombie
 coheren+ 25535  0.0  0.0      0     0 pts/90   Z+   02:41   0:00 [zombie] <defunct>
 coheren+ 25595  0.0  0.0      0     0 pts/90   Z+   02:41   0:00 [zombie] <defunct>

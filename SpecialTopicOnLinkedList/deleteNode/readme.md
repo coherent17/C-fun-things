@@ -1,4 +1,5 @@
-# Intution method to delete a node from the linkedlist
+# Delete Node in linkedlist
+## Method 1
 ```c
 void deleteNode1(List *list, Node *target){
     Node *prev = NULL;
@@ -16,10 +17,11 @@ void deleteNode1(List *list, Node *target){
 }
 ```
 
-In this method, there exist 2 case for deleting the node:
+In this method, there exist 2 cases for deleting the node:
 *   1. delete the head node
 *   2. delete the node except for the head node
 
+## Method 2
 ```c
 void deleteNode2(List *list, Node *target){
     Node **indirect = &list->head;

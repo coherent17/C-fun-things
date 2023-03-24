@@ -59,6 +59,6 @@ void deleteNode2(List *list, Node *target){
     // The indirect pointer point to the address that we'll update
     Node **indirect = &list->head;
     while(*indirect != target)
-        indirect = &(*indirect)->next;
+        indirect = &((*indirect)->next);
     *indirect = target->next;
 }

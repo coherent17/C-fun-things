@@ -31,3 +31,6 @@ void deleteNode2(List *list, Node *target){
 }
 ```
 By using the pointer point to the address that we want to change, we no longer need to evaluate whether the node want to delete is head node or others.
+
+## What I learn:
+*   Linus Torvalds: Sometimes you can see a problem in a different way and rewrite it so that a special case goes away and becomes the normal case. And that’s good code. 

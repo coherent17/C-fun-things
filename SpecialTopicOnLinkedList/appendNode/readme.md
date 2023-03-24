@@ -1,4 +1,4 @@
-# Delete Node in linkedlist
+# Append Node in linkedlist
 ## Method 1
 ```c
 void appendNode1(int value, Node **headptr){
